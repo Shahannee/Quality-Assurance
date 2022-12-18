@@ -1,0 +1,154 @@
+Bug ID: 1
+
+Bug Summary: In ‘Discount’ and ‘course_count’ fields alphabetic characters can be added
+
+Environment/URL: https://qwallity-exam.onrender.com 
+Operation System: Windows 11
+Version: 1
+Browser: Google Chrome:Version 108.0.5359.71 (Official Build) (64-bit)
+                Microsoft Edge: Version 108.0.1462.42 (Official build) (64-bit)
+Submit Date:  06/12/2022
+Reporter: Shahane Arakelyan
+
+Steps to Reproduce:
+1. Login: manualtesting09152022@gmail.com, Pass: 219659750
+6.	login as admin (username: Shahanne, password:246810aa) 
+7.	Click the button 'Shahanne'
+8.	Click the 'Change Discount' button
+9.	Insert alphabetic characters in 'discount' and ‘Course_count’ fields.	
+
+Expected Result: System doesn’t allow to insert alphabetic characters because the fields must be numeric.
+Actual Result: You can insert alphabetic characters.
+
+Screenshot/video: screenshot is attached
+Notes: -
+References: -
+
+Severity: High
+
+
+Bug ID: 2
+
+Bug Summary: Notification – ‘Discount changes’ is visible when alphabetic is inserted in the fields and ‘Change Discount’ button is pressed
+
+
+Environment/URL: https://qwallity-exam.onrender.com 
+Operation System: Windows 11
+Version: 1
+Browser: Google Chrome: Version 108.0.5359.71 (Official Build) (64-bit)
+               Microsoft Edge: Version 108.0.1462.42 (Official build) (64-bit)
+Submit Date:  06/12/2022
+Reporter: Shahane Arakelyan
+
+Steps to Reproduce:
+1. Login: manualtesting09152022@gmail.com, Pass: 219659750
+2. login as admin (username: Shahanne, password:246810aa) 
+3.	Click the button 'Shahanne'
+4.	Click the 'Change Discount' button
+5.	Set Advanced or Fundamental course type
+6.	Insert any alphabetic character in 'discount' and ‘course_count’ fields
+7.	Click ‘Change Discount’ button
+
+Expected Result: Discount must not be configured
+Actual Result: Discount is not configured while notification – ‘Discount changes’ is visible
+Screenshot/video: screenshot is attached
+Notes: Here is the JS error in Console
+ckeditor.js:341 Uncaught TypeError: Cannot read properties of undefined (reading 'getEditor')
+    at a (ckeditor.js:341:110)
+    at CKEDITOR.replace (ckeditor.js:345:473)
+    at discount:116:16
+References: -
+
+Severity: Critical
+
+
+
+Bug ID: 3
+
+Bug Summary: Notification – ‘Discount changes’ is visible when no data is inserted in the fields and ‘Change Discount’ button is pressed
+
+Environment/URL: https://qwallity-exam.onrender.com 
+Operation System: Windows 11
+Version: 1
+Browser: Google Chrome: Version 108.0.5359.71 (Official Build) (64-bit)
+                 Microsoft Edge: Version 108.0.1462.42 (Official build) (64-bit)
+Submit Date:  06/12/2022
+Reporter: Shahane Arakelyan
+
+Steps to Reproduce:
+1. Login: manualtesting09152022@gmail.com, Pass: 219659750
+2. login as admin (username: Shahanne, password:246810aa) 
+3.	Click the button 'Shahanne'
+4.	Click the 'Change Discount' button
+5.	Click ‘Change Discount’ button
+
+Expected Result: Discount must not be configured
+Actual Result: Discount is not configured while notification – ‘Discount changes’ is visible
+Screenshot/video: screenshot is attached
+Notes:-
+References: -
+
+Severity: Critical
+
+
+
+Bug ID: 4
+
+Bug Summary: In ‘Discount’ and ‘course_count’ fields negative numbers can be added
+
+Environment/URL: https://qwallity-exam.onrender.com 
+Operation System: Windows 11
+Version: 1
+Browser: Google Chrome:Version 108.0.5359.71 (Official Build) (64-bit)
+                Microsoft Edge: Version 108.0.1462.42 (Official build) (64-bit)
+Submit Date:  06/12/2022
+Reporter: Shahane Arakelyan
+
+Steps to Reproduce:
+1. Login: manualtesting09152022@gmail.com, Pass: 219659750
+10.	login as admin (username: Shahanne, password:246810aa) 
+11.	Click the button 'Shahanne'
+12.	Click the 'Change Discount' button
+13.	Insert negative numbers in 'discount' and ‘Course_count’ fields.	
+
+Expected Result: System doesn’t allow to insert negative numbers.
+Actual Result: You can insert negative numbers.
+
+Screenshot/video: -
+Notes: -
+References: -
+
+Severity: Medium
+
+
+
+
+Bug ID: 5
+
+Bug Summary: Coure Type Fundamental is changing to Advanced after perssig ‘Change Discount’ button
+
+Environment/URL: https://qwallity-exam.onrender.com 
+Operation System: Windows 11
+Version: 1
+Browser: Google Chrome: Version 108.0.5359.71 (Official Build) (64-bit)
+                 Microsoft Edge: Version 108.0.1462.42 (Official build) (64-bit)
+Submit Date:  06/12/2022
+Reporter: Shahane Arakelyan
+
+Steps to Reproduce:
+1. Login: manualtesting09152022@gmail.com, Pass: 219659750
+2. login as admin (username: Shahanne, password:246810aa) 
+6.	Click the button 'Shahanne'
+7.	Set Course Type Fundamental
+8.	Insert 50 into discount field and 2 into course_count field
+9.	Click the 'Change Discount' button
+10.	Click ‘Change Discount’ button
+
+Expected Result: Discount is configured and after submission admin see notification – ‘Discount changes’
+Actual Result: After clicking 'Discount Change' button Cource Type changes to advanceed but notification – ‘Discount changes’ displayed
+Screenshot/video:
+
+Notes: -
+References: -
+
+Severity: Critical
